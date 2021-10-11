@@ -22,7 +22,7 @@ namespace ClassVsStruct
 
             Console.WriteLine($"Player2:\tHealth:{player2.Health}\tArmor:{player2.Armor}");
 
-            player1.Health = 20f;
+            DuplicateStats(player1);
             player1.Armor = 500f;
 
             Console.WriteLine("Valores depois:");
@@ -31,6 +31,11 @@ namespace ClassVsStruct
             Console.WriteLine($"Player1:\tHealth:{player1.Health}\tArmor:{player1.Armor}");
 
             Console.WriteLine($"Player2:\tHealth:{player2.Health}\tArmor:{player2.Armor}");
+        }
+
+        public static void DuplicateStats(Player p)
+        {
+            p.Health *= 2;
         }
     }
 }
