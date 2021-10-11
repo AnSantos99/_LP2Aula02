@@ -1,6 +1,6 @@
 namespace ClassVsStruct
 {
-    public class Player
+    public struct Player
     {
         public float Health {get; set;}
 
